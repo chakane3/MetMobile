@@ -1,0 +1,673 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		949F3003273F3DDE0024A60B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949F3002273F3DDE0024A60B /* AppDelegate.swift */; };
+		949F3005273F3DDE0024A60B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949F3004273F3DDE0024A60B /* SceneDelegate.swift */; };
+		949F300A273F3DDE0024A60B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 949F3008273F3DDE0024A60B /* Main.storyboard */; };
+		949F300C273F3DE00024A60B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 949F300B273F3DE00024A60B /* Assets.xcassets */; };
+		949F300F273F3DE00024A60B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 949F300D273F3DE00024A60B /* LaunchScreen.storyboard */; };
+		949F301A273F3DE10024A60B /* MetMobileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949F3019273F3DE10024A60B /* MetMobileTests.swift */; };
+		949F3024273F3DE10024A60B /* MetMobileUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949F3023273F3DE10024A60B /* MetMobileUITests.swift */; };
+		949F3026273F3DE10024A60B /* MetMobileUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949F3025273F3DE10024A60B /* MetMobileUITestsLaunchTests.swift */; };
+		949F3037273F3E8F0024A60B /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949F3036273F3E8F0024A60B /* AppError.swift */; };
+		949F3039273F3EFF0024A60B /* ArtCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949F3038273F3EFF0024A60B /* ArtCollection.swift */; };
+		949F303B273F3FFE0024A60B /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949F303A273F3FFE0024A60B /* NetworkError.swift */; };
+		949F303D273F41E80024A60B /* MetAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949F303C273F41E80024A60B /* MetAPI.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		949F3016273F3DE10024A60B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 949F2FF7273F3DDE0024A60B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 949F2FFE273F3DDE0024A60B;
+			remoteInfo = MetMobile;
+		};
+		949F3020273F3DE10024A60B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 949F2FF7273F3DDE0024A60B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 949F2FFE273F3DDE0024A60B;
+			remoteInfo = MetMobile;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		949F2FFF273F3DDE0024A60B /* MetMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MetMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		949F3002273F3DDE0024A60B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		949F3004273F3DDE0024A60B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		949F3009273F3DDE0024A60B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		949F300B273F3DE00024A60B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		949F300E273F3DE00024A60B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		949F3010273F3DE00024A60B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		949F3015273F3DE10024A60B /* MetMobileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MetMobileTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		949F3019273F3DE10024A60B /* MetMobileTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetMobileTests.swift; sourceTree = "<group>"; };
+		949F301F273F3DE10024A60B /* MetMobileUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MetMobileUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		949F3023273F3DE10024A60B /* MetMobileUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetMobileUITests.swift; sourceTree = "<group>"; };
+		949F3025273F3DE10024A60B /* MetMobileUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetMobileUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		949F3036273F3E8F0024A60B /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		949F3038273F3EFF0024A60B /* ArtCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtCollection.swift; sourceTree = "<group>"; };
+		949F303A273F3FFE0024A60B /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		949F303C273F41E80024A60B /* MetAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetAPI.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		949F2FFC273F3DDE0024A60B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		949F3012273F3DE10024A60B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		949F301C273F3DE10024A60B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		949F2FF6273F3DDE0024A60B = {
+			isa = PBXGroup;
+			children = (
+				949F3001273F3DDE0024A60B /* MetMobile */,
+				949F3018273F3DE10024A60B /* MetMobileTests */,
+				949F3022273F3DE10024A60B /* MetMobileUITests */,
+				949F3000273F3DDE0024A60B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		949F3000273F3DDE0024A60B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				949F2FFF273F3DDE0024A60B /* MetMobile.app */,
+				949F3015273F3DE10024A60B /* MetMobileTests.xctest */,
+				949F301F273F3DE10024A60B /* MetMobileUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		949F3001273F3DDE0024A60B /* MetMobile */ = {
+			isa = PBXGroup;
+			children = (
+				949F3035273F3E560024A60B /* Supporting Files */,
+				949F3034273F3E460024A60B /* Views */,
+				949F3033273F3E3E0024A60B /* Network Services */,
+				949F3032273F3E370024A60B /* Models */,
+			);
+			path = MetMobile;
+			sourceTree = "<group>";
+		};
+		949F3018273F3DE10024A60B /* MetMobileTests */ = {
+			isa = PBXGroup;
+			children = (
+				949F3019273F3DE10024A60B /* MetMobileTests.swift */,
+			);
+			path = MetMobileTests;
+			sourceTree = "<group>";
+		};
+		949F3022273F3DE10024A60B /* MetMobileUITests */ = {
+			isa = PBXGroup;
+			children = (
+				949F3023273F3DE10024A60B /* MetMobileUITests.swift */,
+				949F3025273F3DE10024A60B /* MetMobileUITestsLaunchTests.swift */,
+			);
+			path = MetMobileUITests;
+			sourceTree = "<group>";
+		};
+		949F3032273F3E370024A60B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				949F3038273F3EFF0024A60B /* ArtCollection.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		949F3033273F3E3E0024A60B /* Network Services */ = {
+			isa = PBXGroup;
+			children = (
+				949F3036273F3E8F0024A60B /* AppError.swift */,
+				949F303A273F3FFE0024A60B /* NetworkError.swift */,
+				949F303C273F41E80024A60B /* MetAPI.swift */,
+			);
+			path = "Network Services";
+			sourceTree = "<group>";
+		};
+		949F3034273F3E460024A60B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		949F3035273F3E560024A60B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				949F3004273F3DDE0024A60B /* SceneDelegate.swift */,
+				949F3002273F3DDE0024A60B /* AppDelegate.swift */,
+				949F3010273F3DE00024A60B /* Info.plist */,
+				949F300B273F3DE00024A60B /* Assets.xcassets */,
+				949F3008273F3DDE0024A60B /* Main.storyboard */,
+				949F300D273F3DE00024A60B /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		949F2FFE273F3DDE0024A60B /* MetMobile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 949F3029273F3DE10024A60B /* Build configuration list for PBXNativeTarget "MetMobile" */;
+			buildPhases = (
+				949F2FFB273F3DDE0024A60B /* Sources */,
+				949F2FFC273F3DDE0024A60B /* Frameworks */,
+				949F2FFD273F3DDE0024A60B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MetMobile;
+			productName = MetMobile;
+			productReference = 949F2FFF273F3DDE0024A60B /* MetMobile.app */;
+			productType = "com.apple.product-type.application";
+		};
+		949F3014273F3DE10024A60B /* MetMobileTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 949F302C273F3DE10024A60B /* Build configuration list for PBXNativeTarget "MetMobileTests" */;
+			buildPhases = (
+				949F3011273F3DE10024A60B /* Sources */,
+				949F3012273F3DE10024A60B /* Frameworks */,
+				949F3013273F3DE10024A60B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				949F3017273F3DE10024A60B /* PBXTargetDependency */,
+			);
+			name = MetMobileTests;
+			productName = MetMobileTests;
+			productReference = 949F3015273F3DE10024A60B /* MetMobileTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		949F301E273F3DE10024A60B /* MetMobileUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 949F302F273F3DE10024A60B /* Build configuration list for PBXNativeTarget "MetMobileUITests" */;
+			buildPhases = (
+				949F301B273F3DE10024A60B /* Sources */,
+				949F301C273F3DE10024A60B /* Frameworks */,
+				949F301D273F3DE10024A60B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				949F3021273F3DE10024A60B /* PBXTargetDependency */,
+			);
+			name = MetMobileUITests;
+			productName = MetMobileUITests;
+			productReference = 949F301F273F3DE10024A60B /* MetMobileUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		949F2FF7273F3DDE0024A60B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					949F2FFE273F3DDE0024A60B = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					949F3014273F3DE10024A60B = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 949F2FFE273F3DDE0024A60B;
+					};
+					949F301E273F3DE10024A60B = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 949F2FFE273F3DDE0024A60B;
+					};
+				};
+			};
+			buildConfigurationList = 949F2FFA273F3DDE0024A60B /* Build configuration list for PBXProject "MetMobile" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 949F2FF6273F3DDE0024A60B;
+			productRefGroup = 949F3000273F3DDE0024A60B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				949F2FFE273F3DDE0024A60B /* MetMobile */,
+				949F3014273F3DE10024A60B /* MetMobileTests */,
+				949F301E273F3DE10024A60B /* MetMobileUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		949F2FFD273F3DDE0024A60B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				949F300F273F3DE00024A60B /* LaunchScreen.storyboard in Resources */,
+				949F300C273F3DE00024A60B /* Assets.xcassets in Resources */,
+				949F300A273F3DDE0024A60B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		949F3013273F3DE10024A60B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		949F301D273F3DE10024A60B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		949F2FFB273F3DDE0024A60B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				949F3003273F3DDE0024A60B /* AppDelegate.swift in Sources */,
+				949F3039273F3EFF0024A60B /* ArtCollection.swift in Sources */,
+				949F3005273F3DDE0024A60B /* SceneDelegate.swift in Sources */,
+				949F3037273F3E8F0024A60B /* AppError.swift in Sources */,
+				949F303B273F3FFE0024A60B /* NetworkError.swift in Sources */,
+				949F303D273F41E80024A60B /* MetAPI.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		949F3011273F3DE10024A60B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				949F301A273F3DE10024A60B /* MetMobileTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		949F301B273F3DE10024A60B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				949F3024273F3DE10024A60B /* MetMobileUITests.swift in Sources */,
+				949F3026273F3DE10024A60B /* MetMobileUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		949F3017273F3DE10024A60B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 949F2FFE273F3DDE0024A60B /* MetMobile */;
+			targetProxy = 949F3016273F3DE10024A60B /* PBXContainerItemProxy */;
+		};
+		949F3021273F3DE10024A60B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 949F2FFE273F3DDE0024A60B /* MetMobile */;
+			targetProxy = 949F3020273F3DE10024A60B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		949F3008273F3DDE0024A60B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				949F3009273F3DDE0024A60B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		949F300D273F3DE00024A60B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				949F300E273F3DE00024A60B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		949F3027273F3DE10024A60B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		949F3028273F3DE10024A60B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		949F302A273F3DE10024A60B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z4V4D6Q5VP;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MetMobile/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "chakanezshegog-gmail.com.MetMobile";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		949F302B273F3DE10024A60B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z4V4D6Q5VP;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MetMobile/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "chakanezshegog-gmail.com.MetMobile";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		949F302D273F3DE10024A60B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z4V4D6Q5VP;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "chakanezshegog-gmail.com.MetMobileTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MetMobile.app/MetMobile";
+			};
+			name = Debug;
+		};
+		949F302E273F3DE10024A60B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z4V4D6Q5VP;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "chakanezshegog-gmail.com.MetMobileTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MetMobile.app/MetMobile";
+			};
+			name = Release;
+		};
+		949F3030273F3DE10024A60B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z4V4D6Q5VP;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "chakanezshegog-gmail.com.MetMobileUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MetMobile;
+			};
+			name = Debug;
+		};
+		949F3031273F3DE10024A60B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z4V4D6Q5VP;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "chakanezshegog-gmail.com.MetMobileUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MetMobile;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		949F2FFA273F3DDE0024A60B /* Build configuration list for PBXProject "MetMobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				949F3027273F3DE10024A60B /* Debug */,
+				949F3028273F3DE10024A60B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		949F3029273F3DE10024A60B /* Build configuration list for PBXNativeTarget "MetMobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				949F302A273F3DE10024A60B /* Debug */,
+				949F302B273F3DE10024A60B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		949F302C273F3DE10024A60B /* Build configuration list for PBXNativeTarget "MetMobileTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				949F302D273F3DE10024A60B /* Debug */,
+				949F302E273F3DE10024A60B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		949F302F273F3DE10024A60B /* Build configuration list for PBXNativeTarget "MetMobileUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				949F3030273F3DE10024A60B /* Debug */,
+				949F3031273F3DE10024A60B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 949F2FF7273F3DDE0024A60B /* Project object */;
+}
