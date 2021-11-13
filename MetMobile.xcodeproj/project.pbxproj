@@ -19,6 +19,7 @@
 		949F3039273F3EFF0024A60B /* ArtCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949F3038273F3EFF0024A60B /* ArtCollection.swift */; };
 		949F303B273F3FFE0024A60B /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949F303A273F3FFE0024A60B /* NetworkError.swift */; };
 		949F303D273F41E80024A60B /* MetAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949F303C273F41E80024A60B /* MetAPI.swift */; };
+		949F3041273F4A270024A60B /* ArtViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949F3040273F4A270024A60B /* ArtViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		949F3038273F3EFF0024A60B /* ArtCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtCollection.swift; sourceTree = "<group>"; };
 		949F303A273F3FFE0024A60B /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		949F303C273F41E80024A60B /* MetAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetAPI.swift; sourceTree = "<group>"; };
+		949F3040273F4A270024A60B /* ArtViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 		949F3001273F3DDE0024A60B /* MetMobile */ = {
 			isa = PBXGroup;
 			children = (
+				949F3010273F3DE00024A60B /* Info.plist */,
 				949F3035273F3E560024A60B /* Supporting Files */,
 				949F3034273F3E460024A60B /* Views */,
 				949F3033273F3E3E0024A60B /* Network Services */,
@@ -151,6 +154,7 @@
 		949F3034273F3E460024A60B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				949F3040273F4A270024A60B /* ArtViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -160,7 +164,6 @@
 			children = (
 				949F3004273F3DDE0024A60B /* SceneDelegate.swift */,
 				949F3002273F3DDE0024A60B /* AppDelegate.swift */,
-				949F3010273F3DE00024A60B /* Info.plist */,
 				949F300B273F3DE00024A60B /* Assets.xcassets */,
 				949F3008273F3DDE0024A60B /* Main.storyboard */,
 				949F300D273F3DE00024A60B /* LaunchScreen.storyboard */,
@@ -299,6 +302,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				949F3041273F4A270024A60B /* ArtViewController.swift in Sources */,
 				949F3003273F3DDE0024A60B /* AppDelegate.swift in Sources */,
 				949F3039273F3EFF0024A60B /* ArtCollection.swift in Sources */,
 				949F3005273F3DDE0024A60B /* SceneDelegate.swift in Sources */,

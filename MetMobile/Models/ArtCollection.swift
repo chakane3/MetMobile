@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct ArtCollection: Decodable {
+struct Art: Decodable {
     let primaryImage: String
     let primaryImageSmall: String
     let department: String
