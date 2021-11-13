@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nTV-4V-A5y">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
@@ -9,19 +9,56 @@
     </dependencies>
     <scenes>
         <!--Art View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="cOu-xk-muG">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ArtViewController" customModule="MetMobile" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController id="nTV-4V-A5y" customClass="ArtViewController" customModule="MetMobile" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9Mc-H5-Hew">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fBF-9Q-Nbd">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <view alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LhK-XN-VeR">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cbf-83-vy6">
+                                        <rect key="frame" x="8" y="438" width="398" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="cbf-83-vy6" firstAttribute="centerX" secondItem="LhK-XN-VeR" secondAttribute="centerX" id="YK0-Fm-Wa6"/>
+                                    <constraint firstAttribute="trailing" secondItem="cbf-83-vy6" secondAttribute="trailing" constant="8" id="ZjY-xm-2Pd"/>
+                                    <constraint firstItem="cbf-83-vy6" firstAttribute="leading" secondItem="LhK-XN-VeR" secondAttribute="leading" constant="8" id="jDK-KY-C2e"/>
+                                    <constraint firstItem="cbf-83-vy6" firstAttribute="centerY" secondItem="LhK-XN-VeR" secondAttribute="centerY" id="jLj-0N-V7D"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="UtK-7m-mNb"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fBF-9Q-Nbd" firstAttribute="trailing" secondItem="UtK-7m-mNb" secondAttribute="trailing" id="4iB-Kg-2Ty"/>
+                            <constraint firstItem="LhK-XN-VeR" firstAttribute="leading" secondItem="UtK-7m-mNb" secondAttribute="leading" id="AWY-ks-r12"/>
+                            <constraint firstItem="fBF-9Q-Nbd" firstAttribute="top" secondItem="9Mc-H5-Hew" secondAttribute="top" id="D9i-cD-Kxt"/>
+                            <constraint firstAttribute="bottom" secondItem="LhK-XN-VeR" secondAttribute="bottom" id="bob-BK-loZ"/>
+                            <constraint firstItem="LhK-XN-VeR" firstAttribute="trailing" secondItem="UtK-7m-mNb" secondAttribute="trailing" id="cLf-q9-dYL"/>
+                            <constraint firstAttribute="bottom" secondItem="fBF-9Q-Nbd" secondAttribute="bottom" id="fve-Gq-H61"/>
+                            <constraint firstItem="fBF-9Q-Nbd" firstAttribute="leading" secondItem="UtK-7m-mNb" secondAttribute="leading" id="jc4-6T-FMU"/>
+                            <constraint firstItem="LhK-XN-VeR" firstAttribute="top" secondItem="9Mc-H5-Hew" secondAttribute="top" id="lFF-eS-u1j"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="artImage" destination="fBF-9Q-Nbd" id="blR-ee-nNh"/>
+                        <outlet property="artTitle" destination="cbf-83-vy6" id="BKq-s5-qWJ"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UOA-2R-qKJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="114" y="68"/>
+            <point key="canvasLocation" x="1366.6666666666667" y="742.63392857142856"/>
         </scene>
     </scenes>
     <resources>

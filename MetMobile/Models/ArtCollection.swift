@@ -15,4 +15,6 @@ struct Art: Decodable {
     let culture: String
     let objectDate: String
     let country: String
+    let medium: String
+    let artistDisplayName: String
 }
