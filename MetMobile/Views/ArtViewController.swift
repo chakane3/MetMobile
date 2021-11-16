@@ -35,9 +35,8 @@ class ArtViewController: UIViewController {
                     artImage.getImage(with: artCollection.primaryImage) { [weak self] (result) in
                         switch result {
                         case .failure:
-                            DispatchQueue.main.async {
-                                self?.artImage.image = UIImage(systemName: "exclamationmark.triangle")
-                            }
+                            getNewArt(searchQuery: Int.random(in: 1...80000))
+                          
                         case .success(let image):
                             DispatchQueue.main.async {
                                 self?.artImage.image = image
@@ -49,5 +48,4 @@ class ArtViewController: UIViewController {
             }
         })
     }
-
 }
