@@ -17,11 +17,12 @@
 		949F301A273F3DE10024A60B /* MetMobileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949F3019273F3DE10024A60B /* MetMobileTests.swift */; };
 		949F3024273F3DE10024A60B /* MetMobileUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949F3023273F3DE10024A60B /* MetMobileUITests.swift */; };
 		949F3026273F3DE10024A60B /* MetMobileUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949F3025273F3DE10024A60B /* MetMobileUITestsLaunchTests.swift */; };
-		949F3037273F3E8F0024A60B /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949F3036273F3E8F0024A60B /* AppError.swift */; };
 		949F3039273F3EFF0024A60B /* ArtCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949F3038273F3EFF0024A60B /* ArtCollection.swift */; };
-		949F303B273F3FFE0024A60B /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949F303A273F3FFE0024A60B /* NetworkError.swift */; };
+		949F303B273F3FFE0024A60B /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949F303A273F3FFE0024A60B /* NetworkHelper.swift */; };
 		949F303D273F41E80024A60B /* MetAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949F303C273F41E80024A60B /* MetAPI.swift */; };
 		949F3041273F4A270024A60B /* ArtViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949F3040273F4A270024A60B /* ArtViewController.swift */; };
+		949F6A6227C08C84003AD0B3 /* Filemanager+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949F6A6127C08C84003AD0B3 /* Filemanager+Extension.swift */; };
+		949F6A6427C08C9D003AD0B3 /* DataPersistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949F6A6327C08C9D003AD0B3 /* DataPersistence.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,11 +57,12 @@
 		949F301F273F3DE10024A60B /* MetMobileUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MetMobileUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		949F3023273F3DE10024A60B /* MetMobileUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetMobileUITests.swift; sourceTree = "<group>"; };
 		949F3025273F3DE10024A60B /* MetMobileUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetMobileUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		949F3036273F3E8F0024A60B /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
 		949F3038273F3EFF0024A60B /* ArtCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtCollection.swift; sourceTree = "<group>"; };
-		949F303A273F3FFE0024A60B /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		949F303A273F3FFE0024A60B /* NetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
 		949F303C273F41E80024A60B /* MetAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetAPI.swift; sourceTree = "<group>"; };
 		949F3040273F4A270024A60B /* ArtViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtViewController.swift; sourceTree = "<group>"; };
+		949F6A6127C08C84003AD0B3 /* Filemanager+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Filemanager+Extension.swift"; sourceTree = "<group>"; };
+		949F6A6327C08C9D003AD0B3 /* DataPersistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPersistence.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 		949F3001273F3DDE0024A60B /* MetMobile */ = {
 			isa = PBXGroup;
 			children = (
+				949F6A6027C08C74003AD0B3 /* Data Persistence */,
 				949F3010273F3DE00024A60B /* Info.plist */,
 				94629596273F849A0060AE94 /* Extensions */,
 				949F3035273F3E560024A60B /* Supporting Files */,
@@ -157,8 +160,7 @@
 		949F3033273F3E3E0024A60B /* Network Services */ = {
 			isa = PBXGroup;
 			children = (
-				949F3036273F3E8F0024A60B /* AppError.swift */,
-				949F303A273F3FFE0024A60B /* NetworkError.swift */,
+				949F303A273F3FFE0024A60B /* NetworkHelper.swift */,
 				949F303C273F41E80024A60B /* MetAPI.swift */,
 			);
 			path = "Network Services";
@@ -183,6 +185,15 @@
 				949F300D273F3DE00024A60B /* LaunchScreen.storyboard */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		949F6A6027C08C74003AD0B3 /* Data Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				949F6A6127C08C84003AD0B3 /* Filemanager+Extension.swift */,
+				949F6A6327C08C9D003AD0B3 /* DataPersistence.swift */,
+			);
+			path = "Data Persistence";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -319,11 +330,12 @@
 				9462959A273F8E7B0060AE94 /* DetailViewController.swift in Sources */,
 				949F3041273F4A270024A60B /* ArtViewController.swift in Sources */,
 				949F3003273F3DDE0024A60B /* AppDelegate.swift in Sources */,
+				949F6A6427C08C9D003AD0B3 /* DataPersistence.swift in Sources */,
+				949F6A6227C08C84003AD0B3 /* Filemanager+Extension.swift in Sources */,
 				949F3039273F3EFF0024A60B /* ArtCollection.swift in Sources */,
 				949F3005273F3DDE0024A60B /* SceneDelegate.swift in Sources */,
 				94629598273F84D10060AE94 /* ImageClient_Extension.swift in Sources */,
-				949F3037273F3E8F0024A60B /* AppError.swift in Sources */,
-				949F303B273F3FFE0024A60B /* NetworkError.swift in Sources */,
+				949F303B273F3FFE0024A60B /* NetworkHelper.swift in Sources */,
 				949F303D273F41E80024A60B /* MetAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

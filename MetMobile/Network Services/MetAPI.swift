@@ -9,7 +9,7 @@ import Foundation
 
 struct MetAPI {
     // this function takes in an array on random objectID's
-    static func fetchArtCollection(for searchQuery: Int, completion: @escaping (Result<Art, AppError>) -> ()) {
+    static func fetchArtCollection(for searchQuery: Int, completion: @escaping (Result<Art, NetworkError>) -> ()) {
         //let searchQuery = searchquery.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed) ?? "or not thats fine too"
 
         // use string interpolation to build our custom endpoint URL
@@ -23,7 +23,8 @@ struct MetAPI {
         let request = URLRequest(url: url)
         
         // make our network request to the endpoint
-        NetworkHelper.shared.performDataTask(with: request) { (result) in
+        
+        NetworkRequest.shared.performDataTask(with: request) { (result) in
             switch result {
             case .failure(let appError):
                 completion(.failure(.networkClientError(appError)))
